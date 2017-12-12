@@ -6,10 +6,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
+	
 	if (message.content.toLowerCase() === 'gnomo, help' || message.content.toLowerCase() === 'gnomo, ayuda') {
     		message.channel.send('que crees que soy, un bot?');
   	} else
-	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'hola gnomo' || message.content.toLowerCase() === 'hola gnomo!') {
+	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'gnomo, saludos' || message.content.toLowerCase() === 'gnomo, que tal?') {
 		var array = ["hola che!", "que tal!", "hooooola", "saludos!"];
     		message.channel.send(chooseFromArray(array));
   	} else
