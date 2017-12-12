@@ -6,6 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'hola gnomo' || message.content.toLowerCase() === 'hola gnomo!') {
+    		message.channel.send('hola che!');
+  	} else
     	if (message.content.toLowerCase() === 'gnomo, ping') {
     		message.channel.send('pong!');
   	} else
