@@ -6,7 +6,7 @@
   "author": "Stopsignal",
   "scripts": {
     "start": "node bot.js"
-  }
+  },
   "dependencies": {
     "discord.io": "github:woor/discord.io#gateway_v6",
   }
