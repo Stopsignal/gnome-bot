@@ -5,21 +5,14 @@ client.on('ready', () => {
     console.log('listo!');
 });
 
-client.on('message', function (user, userID, channelID, message, evt) {
-    if (message.substring(0, 1) == 'gnomo, ') {
-        var args = message.substring(1).split(' ');
-        var cmd = args[0];
-       
-	args = args.splice(1);
-	switch(cmd) {
-            case 'ping':
-                client.sendMessage({
-                    to: channelID,
-                    message: 'Pong!'
-                });
-            break;
-         }
-     }
+client.on('message', message => {
+    	if (message.content === 'gnomo, ping') {
+    		message.channel.send('pong!');
+  	} else
+	if (message.content === 'gnomo, putea a doritos') {
+    		message.channel.send('lpm doritos');
+  	}
+	
 });
 	
 client.login(process.env.BOT_TOKEN);
