@@ -6,10 +6,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    	if (message.content === 'gnomo, ping') {
+    	if (message.content.toLowerCase() === 'gnomo, ping') {
     		message.channel.send('pong!');
   	} else
-	if (message.content === 'gnomo, putea a doritos') {
+	if (message.content.toLowerCase() === 'gnomo, putea a doritos') {
     		message.channel.send('lpm doritos');
   	}
 	
