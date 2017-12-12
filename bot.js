@@ -1,7 +1,7 @@
 var Discord = require('discord.io');
 const Client = new Discord.Client();
 
-client.on('ready', () {
+client.on('ready', () => {
     console.log('listo!');
 });
 
