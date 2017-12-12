@@ -6,8 +6,11 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.content === 'ping') {
+	if (message.content === 'gnomo, ping') {
 		message.reply('pong');
+	} else
+	if (message.content === 'gnomo, putea a doritos') {
+		message.reply('sos un pelotudo doritos');
 	}
 });
 	
