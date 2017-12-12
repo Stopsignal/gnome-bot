@@ -10,10 +10,7 @@ client.on('message', message => {
 		message.reply('pong');
 	} else
 	if (message.content === 'gnomo, putea a doritos') {
-		client.sendMessage({
-                    to: channelID,
-                    message: 'sos un pelotudo doritos'
-                });
+		client.sendMessage(message.channel, "sos un pelotudo doritos");
 	}
 });
 	
