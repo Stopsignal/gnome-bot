@@ -7,6 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'hola gnomo' || message.content.toLowerCase() === 'hola gnomo!') {
+		var array = ["hola che!", "que tal!", "hooooola", "saludos!"];
     		message.channel.send('hola che!');
   	} else
     	if (message.content.toLowerCase() === 'gnomo, ping') {
@@ -17,5 +18,9 @@ client.on('message', message => {
   	}
 	
 });
+
+function chooseFromArray(params){
+	return params[Math.floor(Math.random() * params.length)];
+}
 	
 client.login(process.env.BOT_TOKEN);
