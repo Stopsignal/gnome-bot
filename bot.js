@@ -8,7 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'hola gnomo' || message.content.toLowerCase() === 'hola gnomo!') {
 		var array = ["hola che!", "que tal!", "hooooola", "saludos!"];
-    		message.channel.send('hola che!');
+    		message.channel.send(chooseFromArray(array));
   	} else
     	if (message.content.toLowerCase() === 'gnomo, ping') {
     		message.channel.send('pong!');
