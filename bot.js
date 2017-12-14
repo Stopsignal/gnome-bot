@@ -34,6 +34,15 @@ client.on('message', message => {
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, que te parece?') {
     		message.channel.send('holy fuck');
+  	} else 
+	if (message.content.toLowerCase() === 'gnomo, que le dijo un pez a otro?') {
+    		message.channel.send('nada!');
+  	} else 
+	if (message.content.toLowerCase() === 'gnomo, deci un chiste' || message.content.toLowerCase() === 'gnomo, deci un chiste!') {
+    		message.channel.send('uy, por ahora no me acuerdo ninguno, pero seguro con el tiempo me voy a acordar!');
+  	} else 
+	if (message.content.toLowerCase() === 'gnomo, te quiero' || message.content.toLowerCase() === 'gnomo, te amo') {
+    		message.channel.send('yo también!');
   	}
 	
 });
