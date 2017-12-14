@@ -24,6 +24,16 @@ client.on('message', message => {
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, penis') {
     		message.channel.send('you will get that at night');
+  	} else 
+	if (message.content.toLowerCase() === 'gnomo, liceo') {
+    		message.channel.send('chupala');
+  	} else 
+	if (message.content.toLowerCase() === 'gnomo, puto') {
+		var array = ["te gustaria, eh?", "tu cara", "chupala", "uff"];
+    		message.channel.send('te gustaría, eh?');
+  	} else 
+	if (message.content.toLowerCase() === 'gnomo, que te parece?') {
+    		message.channel.send('holy fuck');
   	}
 	
 });
