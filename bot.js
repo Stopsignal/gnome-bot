@@ -43,6 +43,9 @@ client.on('message', message => {
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, te quiero' || message.content.toLowerCase() === 'gnomo, te amo') {
     		message.channel.send('yo también!');
+  	} else 
+	if (message.content.toLowerCase() === 'gnomo, cosas chinas, cuidado') {
+    		message.channel.send('):');
   	}
 	
 });
