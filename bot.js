@@ -30,7 +30,7 @@ client.on('message', message => {
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, puto') {
 		var array = ["te gustaria, eh?", "tu cara", "chupala", "uff"];
-    		message.channel.send('te gustaría, eh?');
+    		message.channel.send(array);
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, que te parece?') {
     		message.channel.send('holy fuck');
