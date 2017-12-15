@@ -35,7 +35,7 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, que te parece?') {
     		message.channel.send('holy fuck');
   	} else 
-	if (message.content.toLowerCase() === 'gnomo, que le dijo un pez a otro?') {
+	if (message.content.toLowerCase() === 'gnomo, que le dijo un pez a otro?' || message.content.toLowerCase() === 'gnomo, que le dice un pez a otro?') {
     		message.channel.send('nada!');
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, deci un chiste' || message.content.toLowerCase() === 'gnomo, deci un chiste!') {
