@@ -47,6 +47,10 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, cosas chinas, cuidado') {
     		message.channel.send('):');
   	}
+	else 
+	if (message.content.toLowerCase() === 'gnomo, perdi') {
+    		message.channel.send('@everyone perdi');
+  	}
 	
 });
 
