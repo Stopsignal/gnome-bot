@@ -68,7 +68,7 @@ client.on('message', message => {
 		message.author.sendMessage("el buen shady not very reliable hosting, que bien");
   	}
 	else
-	if (message.content.toLowerCase() === 'gnomo, hentai') {
+	if (message.content.toLowerCase() === 'gnomo, hentai' || message.content.toLowerCase() === 'gnomo, pasa el hentai') {
     		message.channel.send('te juro que me deprimis');
   	}
 });
