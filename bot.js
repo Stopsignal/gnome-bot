@@ -71,6 +71,24 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, hentai' || message.content.toLowerCase() === 'gnomo, pasa el hentai') {
     		message.channel.send('te juro que me deprimis');
   	}
+	else
+	if (message.content.toLowerCase() === 'gnomo, ultimate doom') {
+    		message.channel.send('http://www.theultimatedoom.com/wads/list');
+  	}
+	else
+	if (message.content.toLowerCase() === 'gnomo, tspg') {
+    		message.channel.send('https://allfearthesentinel.net/');
+  	}
+	else
+	if (message.content.toLowerCase() === 'gnomo, deviantart') {
+    		message.channel.send('https://stopsignal.deviantart.com/');
+		message.channel.send('estan buenos los dibujos no?');
+  	}
+	else
+	if (message.content.toLowerCase() === 'gnomo, deviantart') {
+    		message.channel.send('https://gojirafan1994.deviantart.com/gallery/');
+		message.channel.send('DINOSAURS');
+  	}
 });
 
 function chooseFromArray(params){
