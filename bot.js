@@ -73,11 +73,13 @@ client.on('message', message => {
   	}
 	else
 	if (message.content.toLowerCase() === 'gnomo, ultimate doom') {
-    		message.channel.send('http://www.theultimatedoom.com/wads/list');
+		var array = ['http://www.theultimatedoom.com/wads/list', "ya vaaa"];
+		message.channel.send(chooseFromArray(array));
   	}
 	else
 	if (message.content.toLowerCase() === 'gnomo, tspg') {
-    		message.channel.send('https://allfearthesentinel.net/');
+		var array = ['https://allfearthesentinel.net/', "dame un segundo!", "no te lo habia pasado ya al link?"];
+		message.channel.send(chooseFromArray(array));
   	}
 	else
 	if (message.content.toLowerCase() === 'gnomo, deviantart') {
@@ -91,7 +93,14 @@ client.on('message', message => {
   	}
 	else
 	if (message.content.toLowerCase() === 'gnomo, porno' || message.content.toLowerCase() === 'gnomo, pasa el porno' || message.content.toLowerCase() === 'gnomo, pasa los gifs porno') {
-    		message.channel.send('y si vas a pornhub mejor?');
+		var array = ["y si vas a pornhub mejor?", "busca en google?", "no hay porno del gnomo publico, oops", "no"];
+		message.channel.send(chooseFromArray(array));
+  	}
+		else
+	if (message.content.toLowerCase() === 'gnomo, ip') {
+    		message.channel.send();
+		var array = ['el de franco era 190.188.194.86, el de juanba cambia cada segundo y los otros ni idea?', "franco: 190.188.194.86", "190.188.194.86 para el de franco", "ehhh si para ya te digo"];
+		message.channel.send(chooseFromArray(array));
   	}
 });
 
