@@ -89,6 +89,10 @@ client.on('message', message => {
     		message.channel.send('https://gojirafan1994.deviantart.com/gallery/');
 		message.channel.send('DINOSAURS');
   	}
+	else
+	if (message.content.toLowerCase() === 'gnomo, porno' || message.content.toLowerCase() === 'gnomo, pasa el porno' || message.content.toLowerCase() === 'gnomo, pasa los gifs porno') {
+    		message.channel.send('y si vas a pornhub mejor?');
+  	}
 });
 
 function chooseFromArray(params){
