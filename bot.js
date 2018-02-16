@@ -85,7 +85,7 @@ client.on('message', message => {
 		message.channel.send('estan buenos los dibujos no?');
   	}
 	else
-	if (message.content.toLowerCase() === 'gnomo, deviantart') {
+	if (message.content.toLowerCase() === 'gnomo, gojira') {
     		message.channel.send('https://gojirafan1994.deviantart.com/gallery/');
 		message.channel.send('DINOSAURS');
   	}
