@@ -60,6 +60,12 @@ client.on('message', message => {
     		message.channel.send('ahi te envio!');
 		message.author.sendMessage("https://github.com/Stopsignal/gnome-bot/blob/master/bot.js");
 		message.author.sendMessage("y no te olvides!");
+  	}https://dashboard.heroku.com/apps/gnome-bot
+	else
+	if (message.content.toLowerCase() === 'gnomo, github') {
+    		message.channel.send('ahi te envio!');
+		message.author.sendMessage("https://dashboard.heroku.com/apps/gnome-bot");
+		message.author.sendMessage("el buen shady not very reliable hosting, que bien");
   	}
 });
 
