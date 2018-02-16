@@ -60,7 +60,7 @@ client.on('message', message => {
     		message.channel.send('ahi te envio!');
 		message.author.sendMessage("https://github.com/Stopsignal/gnome-bot/blob/master/bot.js");
 		message.author.sendMessage("y no te olvides!");
-  	}https://dashboard.heroku.com/apps/gnome-bot
+  	}
 	else
 	if (message.content.toLowerCase() === 'gnomo, host') {
     		message.channel.send('ahi te envio!');
