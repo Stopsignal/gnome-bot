@@ -62,10 +62,14 @@ client.on('message', message => {
 		message.author.sendMessage("y no te olvides!");
   	}https://dashboard.heroku.com/apps/gnome-bot
 	else
-	if (message.content.toLowerCase() === 'gnomo, github') {
+	if (message.content.toLowerCase() === 'gnomo, host') {
     		message.channel.send('ahi te envio!');
 		message.author.sendMessage("https://dashboard.heroku.com/apps/gnome-bot");
 		message.author.sendMessage("el buen shady not very reliable hosting, que bien");
+  	}
+	else
+	if (message.content.toLowerCase() === 'gnomo, hentai') {
+    		message.channel.send('te juro que me deprimis');
   	}
 });
 
