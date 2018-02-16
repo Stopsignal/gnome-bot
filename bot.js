@@ -58,7 +58,8 @@ client.on('message', message => {
 	else
 	if (message.content.toLowerCase() === 'gnomo, github') {
     		message.channel.send('ahi te envio!');
-		message.author.sendMessage("test");
+		message.author.sendMessage("https://github.com/Stopsignal/gnome-bot/blob/master/bot.js");
+		message.author.sendMessage("y no te olvides!");
   	}
 });
 
