@@ -55,7 +55,11 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, mapinfo') {
     		message.channel.send('https://zdoom.org/wiki/MAPINFO');
   	}
-	
+	else
+	if (message.content.toLowerCase() === 'gnomo, github') {
+    		message.channel.send('ahi te envio!');
+		message.author.sendMessage("test");
+  	}
 });
 
 function chooseFromArray(params){
