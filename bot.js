@@ -97,7 +97,7 @@ client.on('message', message => {
 		message.channel.send(chooseFromArray(array));
   	}
 		else
-	if (message.content.toLowerCase() === 'gnomo, ip') {
+	if (message.content.toLowerCase() === 'gnomo, ip' || message.content.toLowerCase() === 'gnomo, ips' ) {
     		message.channel.send();
 		var array = ['el de franco era 190.188.194.86, el de juanba cambia cada segundo y los otros ni idea?', "franco: 190.188.194.86", "190.188.194.86 para el de franco", "ehhh si para ya te digo"];
 		message.channel.send(chooseFromArray(array));
