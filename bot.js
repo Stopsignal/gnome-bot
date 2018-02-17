@@ -51,6 +51,10 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, perdi') {
     		message.channel.send('@everyone perdi');
   	}
+	else 
+	if (message.content.toLowerCase() === 'gnomo, molesta a dotter' || message.content.toLowerCase() === 'gnomo, dotter') {
+    		message.channel.send('@everyone');
+  	}
 	else
 	if (message.content.toLowerCase() === 'gnomo, mapinfo') {
     		message.channel.send('https://zdoom.org/wiki/MAPINFO');
