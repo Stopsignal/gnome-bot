@@ -100,11 +100,14 @@ client.on('message', message => {
 		var array = ["y si vas a pornhub mejor?", "busca en google?", "no hay porno del gnomo publico, oops", "no"];
 		message.channel.send(chooseFromArray(array));
   	}
-		else
+	else
 	if (message.content.toLowerCase() === 'gnomo, ip' || message.content.toLowerCase() === 'gnomo, ips' ) {
-    		message.channel.send();
 		var array = ['el de franco era 190.188.194.86, el de juanba cambia cada segundo y los otros ni idea?', "franco: 190.188.194.86", "190.188.194.86 para el de franco", "ehhh si para ya te digo"];
 		message.channel.send(chooseFromArray(array));
+  	}
+	else 
+	if (message.content.toLowerCase() === 'gnomo, bad vibes') {
+		message.channel.send('https://i.imgur.com/Btlb52Y.jpg');
   	}
 });
 
