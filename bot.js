@@ -109,6 +109,10 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, bad vibes') {
 		message.channel.send('https://i.imgur.com/Btlb52Y.jpg');
   	}
+	else
+	if (message.content.toLowerCase() === 'gnomo, jeringo') {
+		message.channel.send('aca tenes, ravioles: https://www.dropbox.com/sh/3er6oapxvnwmn7r/AAA1OM1udDPU4tkbkWXLrUF0a?dl=0&lst=');
+  	}
 });
 
 function chooseFromArray(params){
