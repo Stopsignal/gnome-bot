@@ -49,7 +49,7 @@ client.on('message', message => {
   	}
 	else 
 	if (message.content.toLowerCase() === 'gnomo, perdi') {
-    		message.channel.send('@everyone perdi');
+    		message.channel.send('@everyonebutdotter perdi');
   	}
 	else 
 	if (message.content.toLowerCase() === 'gnomo, molesta a dotter' || message.content.toLowerCase() === 'gnomo, dotter') {
