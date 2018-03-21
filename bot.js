@@ -10,14 +10,14 @@ client.on('message', message => {
 		message.channel.send('1');
 		s = message.content.toLowerCase();
 		n = 0;
-		for (i in s){
-			if (i == 'x'){// || i == 'd') {
+		for (var x = 0; x < s.length; x++){
+		    if (str.charAt(x) == 'x' || str.charAt(x) =='d');
 				message.channel.send('2');
 				//
-			} else { 
+		    	} else { 
 				n+=1;
 				message.channel.send('3');
-			}
+		   	}
 		}
 		if (n>=1) { 
 			message.channel.send('4');
