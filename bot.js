@@ -7,7 +7,6 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	if (message.content.toLowerCase().substring(0, 1) == 'x' && message.content.length > 1) {
-		message.channel.send('1');
 		s = message.content.toLowerCase();
 		n = 0;
 		for (var x = 0; x < s.length; x++){
