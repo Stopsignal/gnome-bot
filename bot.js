@@ -22,10 +22,10 @@ client.on('message', message => {
 	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
-	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
+	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci ') {
 		//let myRole = message.guild.roles.find("name", "Stop!");
 		if (message.member.roles.find("name", "Stop!")){
-		    	s = message.content.toLowerCase().substring(13, message.content.length);
+		    	s = message.content.toLowerCase().substring(12, message.content.length);
 			message.channel.send(s);
 		} else {
 		       message.channel.send('?');
