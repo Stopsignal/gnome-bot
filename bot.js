@@ -16,14 +16,21 @@ client.on('message', message => {
 				n+=1;
 		   	}
 		}
-		if (n>=1) { 
-			//return;
-		} else {
+		if (n=0) {
 			message.delete(1000);
 		}
 	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
+	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
+		let myRole = message.guild.roles.find("name", "Stop!");
+		if (message.member.roles.has(myRole.id) {
+		    	s = message.content.toLowerCase().substring(13, message.content.length);
+			message.channel.send(s);
+		} else {
+		       message.channel.send('?');
+		}
+  	} else
 	if (message.content.toLowerCase() === 'gnomo, help' || message.content.toLowerCase() === 'gnomo, ayuda') {
     		message.channel.send('que crees que soy, un bot?');
   	} else
