@@ -11,7 +11,7 @@ client.on('message', message => {
 		s = message.content.toLowerCase();
 		n = 0;
 		for (i in s){
-			if (i == 'x' || i == 'd') {
+			if (i == 'x'){// || i == 'd') {
 				message.channel.send('2');
 				//
 			} else { 
