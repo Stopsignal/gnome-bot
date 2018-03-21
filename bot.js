@@ -6,6 +6,22 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+	if (message.content.toLowerCase().substring(0, 1) == 'x') {
+		s = message.content.toLowerCase();
+		n = 0;
+		for (i in s){
+			if (i == 'x' || i == 'd') {
+				//
+			} else { 
+				n+=1;
+			}
+		}
+		if (n>=1) { 
+			//return;
+		} else {
+			message.delete(1000);
+		}
+	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
 	if (message.content.toLowerCase() === 'gnomo, help' || message.content.toLowerCase() === 'gnomo, ayuda') {
