@@ -16,7 +16,7 @@ client.on('message', message => {
 				n+=1;
 		   	}
 		}
-		if (n=0) {
+		if (n==0) {
 			message.delete(1000);
 		}
 	}
