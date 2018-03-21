@@ -12,24 +12,21 @@ client.on('message', message => {
 		n = 0;
 		for (var x = 0; x < s.length; x++){
 		    if (s.charAt(x) == 'x' || s.charAt(x) =='d'){
-				message.channel.send('2');
 				//
 		    	} else { 
 				n+=1;
-				message.channel.send('3');
 		   	}
 		}
 		if (n>=1) { 
-			message.channel.send('4');
 			//return;
 		} else {
-			message.channel.send('5');
 			message.delete(1000);
 		}
 	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
 	if (message.content.toLowerCase() === 'gnomo, help' || message.content.toLowerCase() === 'gnomo, ayuda') {
+		message.delete(1000);
     		message.channel.send('que crees que soy, un bot?');
   	} else
 	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'gnomo, saludos' || message.content.toLowerCase() === 'gnomo, que tal?') {
