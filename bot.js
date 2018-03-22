@@ -10,7 +10,7 @@ client.on('message', message => {
 		s = message.content.toLowerCase();
 		n = 0;
 		for (var x = 0; x < s.length; x++){
-		    if (s.charAt(x) == 'x' || s.charAt(x) =='d'){
+		    if (s.charAt(x) == 'x' || s.charAt(x) =='d' || s.charAt(x) ==' '){
 				//
 		    	} else { 
 				n+=1;
