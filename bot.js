@@ -9,14 +9,19 @@ client.on('message', message => {
 	if ((message.content.toLowerCase().substring(0, 1) == 'x' || message.content.toLowerCase().substring(0, 1) == 'd' || message.content.toLowerCase().substring(0, 1) == ' ' || message.content.toLowerCase().substring(0, 1) == 's') && message.content.length > 1) {
 		s = message.content.toLowerCase();
 		n = 0;
+		n2 = 0;
 		for (var x = 0; x < s.length; x++){
-		    if (s.charAt(x) == 'x' || s.charAt(x) == 's' || s.charAt(x) =='d' || s.charAt(x) ==' '){
+		    if !(s.charAt(x) == 'x' || s.charAt(x) == 's' || s.charAt(x) =='d' || s.charAt(x) ==' '){
+			n+=1;
+			if !(s.charAt(x) == 'x' || s.charAt(x) == 's'){
+				n2++;
+			}
+			    
+		    	//} else { 
 				//
-		    	} else { 
-				n+=1;
 		   	}
 		}
-		if (n==0) {
+		if (n==0 && n2>=2) {
 			message.delete(1000);
 		}
 	}
