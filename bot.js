@@ -13,12 +13,10 @@ client.on('message', message => {
 		for (var x = 0; x < s.length; x++){
 		    if !(s.charAt(x) == 'x' || s.charAt(x) == 's' || s.charAt(x) =='d' || s.charAt(x) ==' '){
 			n+=1;
-			if !(s.charAt(x) == 'x' || s.charAt(x) == 's'){
-				n2++;
-			}
-			    
-		    	//} else { 
-				//
+		    	} else { 
+				if !(s.charAt(x) == 'x' || s.charAt(x) == 's'){
+					n2++;
+				}
 		   	}
 		}
 		if (n==0 && n2>=2) {
