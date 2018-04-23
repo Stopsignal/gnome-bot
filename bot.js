@@ -20,11 +20,11 @@ client.on('message', message => {
 			n++;
 		   }
 		}
-		if (n==0 && n2>=2 || n2 > n+4) {
+		if (n==0 && n2>=2 || n2 > n+n/5) {
 			message.delete(1000);
 		}
-		message.channel.send('n: ' + n);
-		message.channel.send('n2: ' + n2);
+		//message.channel.send('n: ' + n);
+		//message.channel.send('n2: ' + n2);
 	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
