@@ -20,7 +20,7 @@ client.on('message', message => {
 			n++;
 		   }
 		}
-		if (n==0 && n2>=2 || n2 > n+n/5) {
+		if (n==0 && n2>=2 || n2 > n+2) {
 			message.delete(1000);
 		}
 		//message.channel.send('n: ' + n);
