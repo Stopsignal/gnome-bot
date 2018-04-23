@@ -11,7 +11,7 @@ client.on('message', message => {
 		n = 0;
 		n2 = 0;
 		for (var x = 0; x < s.length; x++){
-		    if (s.charAt(x) == 'x' || s.charAt(x) == 's' || s.charAt(x) =='d' || s.charAt(x) ==' '){
+		    if (s.charAt(x) !== 'x' || s.charAt(x) !== 's' || s.charAt(x) !=='d' || s.charAt(x) !==' '){
 			n+=1;
 		    } else { 
 			if (s.charAt(x) == 'x' || s.charAt(x) == 'd'){
