@@ -22,6 +22,8 @@ client.on('message', message => {
 		if (n==0 && n2>=2) {
 			message.delete(1000);
 		}
+		message.channel.send('n: ' + n);
+		message.channel.send('n2: ' + n2);
 	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
