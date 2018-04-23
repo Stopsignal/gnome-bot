@@ -15,7 +15,7 @@ client.on('message', message => {
 			n+=1;
 		    } else { 
 			if (s.charAt(x) == 'x' || s.charAt(x) == 'd'){
-				n2++;
+				n2+=1;
 			}
 		   }
 		}
