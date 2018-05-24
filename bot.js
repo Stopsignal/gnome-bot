@@ -32,6 +32,7 @@ client.on('message', message => {
 		//let myRole = message.guild.roles.find("name", "Stop!");
 		if (message.member.roles.find("name", "Stop!")){
 		    	s = message.content.toLowerCase().substring(12, message.content.length);
+			message.delete(1000);
 			message.channel.send(s);
 		} else {
 		       message.channel.send('?');
