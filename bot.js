@@ -45,6 +45,10 @@ client.on('message', message => {
 		var array = ["de nada!", "siempre a tu servicio!", "tranqui!", "jaja, gracias!"];
     		message.channel.send(chooseFromArray(array));
   	} else
+	if (message.content.toLowerCase() === 'gnomo, es lo mismo?') {
+		var array = ["es lo miiiiiismo", "es lo mismo!", "es lo miismo!"];
+    		message.channel.send(chooseFromArray(array));
+  	} else
 	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'gnomo, saludos' || message.content.toLowerCase() === 'gnomo, que tal?') {
 		var array = ["hola che!", "que tal!", "hooooola", "saludos!"];
     		message.channel.send(chooseFromArray(array));
