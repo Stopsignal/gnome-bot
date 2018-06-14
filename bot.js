@@ -41,6 +41,10 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, help' || message.content.toLowerCase() === 'gnomo, ayuda') {
     		message.channel.send('que crees que soy, un bot?');
   	} else
+	if (message.content.toLowerCase() === 'gnomo, gracias' || message.content.toLowerCase() === 'gnomo, gracias!') {
+		var array = ["de nada!", "siempre a tu servicio!", "tranqui!", "jaja, gracias!"];
+    		message.channel.send(chooseFromArray(array));
+  	} else
 	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'gnomo, saludos' || message.content.toLowerCase() === 'gnomo, que tal?') {
 		var array = ["hola che!", "que tal!", "hooooola", "saludos!"];
     		message.channel.send(chooseFromArray(array));
@@ -60,7 +64,7 @@ client.on('message', message => {
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, puto') {
 		var array = ["te gustaria, eh?", "tu cara", "chupala", "uff"];
-    		message.channel.send(array);
+    		message.channel.send(chooseFromArray(array));
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, que te parece?') {
     		message.channel.send('holy fuck');
