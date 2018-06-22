@@ -42,7 +42,7 @@ client.on('message', message => {
     		message.channel.send('que crees que soy, un bot?');
   	} else
 	if (message.content.toLowerCase() === 'gnomo, gracias' || message.content.toLowerCase() === 'gnomo, gracias!') {
-		var array = ["de nada!", "siempre a tu servicio!", "tranqui!", "jaja, gracias!"];
+		var array = ["de nada!", "siempre a tu servicio!", "tranqui!", "jaja, de nada!"];
     		message.channel.send(chooseFromArray(array));
   	} else
 	if (message.content.toLowerCase() === 'gnomo, es lo mismo?') {
