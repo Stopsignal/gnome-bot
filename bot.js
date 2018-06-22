@@ -66,6 +66,9 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, liceo') {
     		message.channel.send('chupala');
   	} else 
+	if (message.content.toLowerCase() === 'gnomo, dcfgvhbjnkml,ñ') {
+    		message.channel.send('dcfgvhbjnkml,ñ');
+  	} else 
 	if (message.content.toLowerCase() === 'gnomo, puto') {
 		var array = ["te gustaria, eh?", "tu cara", "chupala", "uff"];
     		message.channel.send(chooseFromArray(array));
