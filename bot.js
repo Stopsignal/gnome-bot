@@ -63,6 +63,9 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, penis') {
     		message.channel.send('you will get that at night');
   	} else 
+	if (message.content.toLowerCase() === 'gnomo, apc') {
+    		message.channel.send('https://vignette.wikia.nocookie.net/gtawiki/images/5/5d/APC-GTAO-front.png/revision/latest?cb=20170614144137');
+  	} else 
 	if (message.content.toLowerCase() === 'gnomo, liceo') {
     		message.channel.send('chupala');
   	} else 
