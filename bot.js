@@ -49,6 +49,9 @@ client.on('message', message => {
 		var array = ["es lo miiiiiismo", "es lo mismo!", "es lo miismo!"];
     		message.channel.send(chooseFromArray(array));
   	} else
+	if (message.content.toLowerCase() === 'gnomo, cambia de icono') {
+    		message.channel.send("Lo lamento, tenes que comprar uno de nuestros *Paquete De Iconos* para poder cambiar de icono. Yo soy puro programa, lo cosmetico viene aparte. Para visitar nuestro mercado, visite: https://bit.ly/2wpcebP"));
+  	} else
 	if (message.content.toLowerCase() === 'gnomo, hola' || message.content.toLowerCase() === 'gnomo, hola!' || message.content.toLowerCase() === 'gnomo, saludos' || message.content.toLowerCase() === 'gnomo, que tal?') {
 		var array = ["hola che!", "que tal!", "hooooola", "saludos!"];
     		message.channel.send(chooseFromArray(array));
