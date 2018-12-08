@@ -48,7 +48,7 @@ client.on('message', message => {
     			message.channel.send(":christmas_tree:" + chooseFromArray(arrayicons) + ":christmas_tree: " + chooseFromArray(array) + " :christmas_tree:" + chooseFromArray(arrayicons) + ":christmas_tree:");
 			message.channel.send(chooseFromArray(array2))
             		.catch(console.error); // add error handling here
-        	}, 1 * 10000); 
+        	}, 1 * 1000000); 
     	} else
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
 		//let myRole = message.guild.roles.find("name", "Stop!");
