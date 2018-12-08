@@ -29,7 +29,7 @@ client.on('message', message => {
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
 	if (message.content.toLowerCase() === 'gnomo, version') {
-    		message.channel.send('ponele que 1.0 ahi');
+    		message.channel.send("ponele que 1.0 ahi");
   	} else
 	if (message.content.toLowerCase() === 'gnomo, navidad' || message.content.toLowerCase() === 'gnomo, navidad!') {
 		var arrayicons = [":candy:", ":bell:", ":fireworks:", ":santa:"];
