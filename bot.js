@@ -28,6 +28,9 @@ client.on('message', message => {
 	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
+	if (message.content.toLowerCase() === 'gnomo, version') {
+    		message.channel.send('ponele que 1.0 ahi');
+  	} else
 	if (message.content.toLowerCase() === 'gnomo, navidad' || message.content.toLowerCase() === 'gnomo, navidad!') {
 		var arrayicons = [":candy:", ":bell:", ":fireworks:", ":santa:"];
     		var array = ["CHASQUIBUM", "ARBOL DE NAVIDAD", "LUCECITAS", "SANGUCHITOS", "PESEBRE", "FUEGOS ARTIFICIALES", "REGALOS", "SEGUNDA REVOLUCIÓN INDUSTRIAL", "DECORACIONES", "CARBON EN MEDIAS", "MUSICA NAVIDEÑA", "MI POBRE ANGELITO 2", "FAMILIA", "AMOR", 
