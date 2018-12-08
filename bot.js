@@ -28,6 +28,16 @@ client.on('message', message => {
 	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
+	// add message as a parameter to your callback function
+    	// Now, you can use the message variable inside
+    	if (message.content === "gnomo, mood de navidad") { 
+        	var interval = setInterval (function () {
+            		// use the message's channel (TextChannel) to send a new message
+            		message.channel.send("123")
+            		.catch(console.error); // add error handling here
+        	}, 1 * 100); 
+    	}
+	
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
 		//let myRole = message.guild.roles.find("name", "Stop!");
 		if (message.member.roles.find("name", "Celeste") ||message.member.roles.find("name", "Stop!") || message.member.roles.find("name", "stop") || message.member.roles.find("name", "Captain Obvious")){
