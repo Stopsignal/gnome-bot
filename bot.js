@@ -29,7 +29,7 @@ client.on('message', message => {
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
 	if (message.content.toLowerCase() === 'gnomo, version') {
-    		message.channel.send("ponele que 1.0 ahi");
+    		message.channel.send("ponele que 1.1 ahi");
   	} else
 	if (message.content.toLowerCase() === 'gnomo, navidad' || message.content.toLowerCase() === 'gnomo, navidad!') {
 		var arrayicons = [":candy:", ":bell:", ":fireworks:", ":santa:"];
@@ -51,7 +51,7 @@ client.on('message', message => {
     			message.channel.send(":christmas_tree:" + chooseFromArray(arrayicons) + ":christmas_tree: " + chooseFromArray(array) + " :christmas_tree:" + chooseFromArray(arrayicons) + ":christmas_tree:");
 			message.channel.send(chooseFromArray(array2))
             		.catch(console.error); // add error handling here
-        	}, (((1 * 1000)*60)*24) ); 
+        	}, ((((1 * 1000)*60)*60)*24) ); 
     	}
     	if (message.content === "gnomo, mood de navidad") { 
         	var interval = setInterval (function () {
@@ -65,7 +65,7 @@ client.on('message', message => {
     			message.channel.send(":christmas_tree:" + chooseFromArray(arrayicons) + ":christmas_tree: " + chooseFromArray(array) + " :christmas_tree:" + chooseFromArray(arrayicons) + ":christmas_tree:");
 			message.channel.send(chooseFromArray(array2))
             		.catch(console.error); // add error handling here
-        	}, ((1 * 1000)*60) ); 
+        	}, (((1 * 1000)*60)*60) ); 
     	} else
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
 		//let myRole = message.guild.roles.find("name", "Stop!");
