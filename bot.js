@@ -35,7 +35,7 @@ client.on('message', message => {
             		// use the message's channel (TextChannel) to send a new message
             		message.channel.send("123")
             		.catch(console.error); // add error handling here
-        	}, 1 * 100); 
+        	}, 1 * 10000); 
     	}
 	
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
