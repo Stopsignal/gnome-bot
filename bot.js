@@ -49,7 +49,7 @@ client.on('message', message => {
 			message.channel.send(chooseFromArray(array2));
 			message.channel.send("test")
             		.catch(console.error); // add error handling here
-        	}, ((1 * 1000)*5));//*60); 
+        	}, ((1 * 1000)*60) ); 
     	} else
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
 		//let myRole = message.guild.roles.find("name", "Stop!");
