@@ -29,7 +29,7 @@ client.on('message', message => {
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
 	if (message.content.toLowerCase() === 'gnomo, version') {
-    		message.channel.send("ponele que 1.1 ahi");
+    		message.channel.send("ponele que 1.2 ahi");
   	} else
 	if (message.content.toLowerCase() === 'gnomo, navidad' || message.content.toLowerCase() === 'gnomo, navidad!') {
 		var arrayicons = [":candy:", ":bell:", ":fireworks:", ":santa:"];
@@ -52,6 +52,7 @@ client.on('message', message => {
 			message.channel.send(chooseFromArray(array2))
             		.catch(console.error); // add error handling here
         	}, ((((1 * 1000)*60)*60)*24) ); 
+		message.delete(1000);
     	}
     	if (message.content === "gnomo, mood de navidad") { 
         	var interval = setInterval (function () {
@@ -66,6 +67,7 @@ client.on('message', message => {
 			message.channel.send(chooseFromArray(array2))
             		.catch(console.error); // add error handling here
         	}, (((1 * 1000)*60)*60) ); 
+		message.delete(1000);
     	} else
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
 		//let myRole = message.guild.roles.find("name", "Stop!");
@@ -79,13 +81,6 @@ client.on('message', message => {
   	} else
 	if (message.content.toLowerCase() === 'gnomo, help' || message.content.toLowerCase() === 'gnomo, ayuda') {
     		message.channel.send('que crees que soy, un bot?');
-  	} else
-	if (message.content.toLowerCase() === 'gnomo, navidad' || message.content.toLowerCase() === 'gnomo, navidad!') {
-    		var array = ["CHASQUIBUM", "ARBOL DE NAVIDAD", "LUCECITAS", "SANGUCHITOS", "PESEBRE", "FUEGOS ARTIFICIALES", "REGALOS", "SEGUNDA REVOLUCIÓN INDUSTRIAL", "DECORACIONES", "CARBON EN MEDIAS", "MUSICA NAVIDEÑA", "MI POBRE ANGELITO 2", "FAMILIA", "AMOR", 
-			    "PAPA NOEL", "CAPITALISMO"];
-		var array2 = ["https://images.clarin.com/2016/11/29/S1b7p8gEl_1256x620.jpg", "https://as00.epimg.net/betech/imagenes/2016/12/16/portada/1481919834_730094_1481919951_noticia_normal.jpg","https://fotos00.diariodemallorca.es/mmp/2017/12/08/328x206/adorno-navidad.jpg","http://static.t13.cl/images/sizes/1200x675/1513099619-arbol.jpg","https://www.america-retail.com/static//2018/09/navidad-adornos-tipicos-euroresidentes.jpg","https://okdiario.com/img/2017/12/20/origen-de-la-nochebuena-y-el-dia-de-navidad-2-620x349.jpg", "https://uploads-ssl.webflow.com/59c3fab21e1932000173db91/5bfd5bd8cd67e829b0ea97d3_navidad.jpg", "http://www.studiolum.com/wang/lenin/lenin-and-children-on-christmas-wood-feast.jpg", "https://cdne.diariocorreo.pe/redactor/uploads/2017/12/15/navidad-en-casa.jpg", "https://uy.emedemujer.com/wp-content/uploads/sites/4/2015/12/iStock_000076778145_Small.jpg", "http://assets.tiempo.com.mx/uploads/imagen/imagen/222065/adornos__navidad.jpg"];
-    		message.channel.send(chooseFromArray(array));
-		message.channel.send(chooseFromArray(array2));
   	} else
 	if (message.content.toLowerCase() === 'gnomo, gracias' || message.content.toLowerCase() === 'gnomo, gracias!') {
 		var array = ["de nada!", "siempre a tu servicio!", "tranqui!", "jaja, de nada!"];
