@@ -71,7 +71,7 @@ client.on('message', message => {
     	} else
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
 		//let myRole = message.guild.roles.find("name", "Stop!");
-		if (message.member.roles.find("name", "Celeste") ||message.member.roles.find("name", "Stop!") || message.member.roles.find("name", "stop") || message.member.roles.find("name", "Captain Obvious")){
+		if (message.member.roles.find("name", "Shaggy Squirrel") ||message.member.roles.find("name", "Celeste") ||message.member.roles.find("name", "Stop!") || message.member.roles.find("name", "stop") || message.member.roles.find("name", "Captain Obvious")){
 		    	s = message.content.toLowerCase().substring(12, message.content.length);
 			message.delete(1000);
 			message.channel.send(s);
