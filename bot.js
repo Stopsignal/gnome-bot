@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if ((message.content.toLowerCase().substring(0, 1) == 'x' ||	message.content.toLowerCase().substring(0, 1) == 'b' || message.content.toLowerCase().substring(0, 1) == 'd' || message.content.toLowerCase().substring(0, 1) == ':' || message.content.toLowerCase().substring(0, 1) == 'v' || message.content.toLowerCase().substring(0, 1) == ' ' || message.content.toLowerCase().substring(0, 1) == 's' || message.content.toLowerCase().substring(0, 1) == 'k') && message.content.length > 1 && message.content.toLowerCase().substring(0, 3)!== 'd:') {
+	if ((message.content.toLowerCase().substring(0, 1) == 'x' ||	message.content.toLowerCase().substring(0, 1) == 'b' || message.content.toLowerCase().substring(0, 1) == 'd' || message.content.toLowerCase().substring(0, 1) == ':' || message.content.toLowerCase().substring(0, 1) == 'v' || message.content.toLowerCase().substring(0, 1) == ' ' || message.content.toLowerCase().substring(0, 1) == 's' || message.content.toLowerCase().substring(0, 1) == '.') && message.content.length > 1 && message.content.toLowerCase().substring(0, 3)!== 'd:') {
 		s = message.content.toLowerCase();
 		n = 0;
 		n2 = 0;
@@ -71,7 +71,7 @@ client.on('message', message => {
     	} else
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
 		//let myRole = message.guild.roles.find("name", "Stop!");
-		if (message.member.roles.find("name", "Shaggy Squirrel") ||message.member.roles.find("name", "Celeste") ||message.member.roles.find("name", "Stop!") || message.member.roles.find("name", "stop") || message.member.roles.find("name", "Captain Obvious")){
+		if (message.member.roles.find("name", "sufrimiento") ||message.member.roles.find("name", "Celeste") ||message.member.roles.find("name", "Stop!") || message.member.roles.find("name", "stop") || message.member.roles.find("name", "Captain Obvious")){
 		    	s = message.content.toLowerCase().substring(12, message.content.length);
 			message.delete(1000);
 			message.channel.send(s);
