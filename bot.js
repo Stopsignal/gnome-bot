@@ -28,8 +28,21 @@ client.on('message', message => {
 	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
+	if (message.content.toLowerCase() === 'gnomo, animators survival kit'||message.content.toLowerCase() === 'gnomo, animacion') {
+    		message.channel.send("animators survival kit (en ingles): http://www.floobynooby.com/pdfs/The_Animators_Survival_Kit.pdf");
+  	}else
+	if (message.content.toLowerCase() === 'gnomo, decorate') {
+    		message.channel.send("https://zdoom.org/wiki/ACS");
+		message.channel.send("acs funcs: https://zdoom.org/wiki/Built-in_ACS_functions");
+  	}else
+	if (message.content.toLowerCase() === 'gnomo, acs') {
+    		message.channel.send("https://zdoom.org/wiki/DECORATE");
+		message.channel.send("expresiones: https://zdoom.org/wiki/DECORATE_expressions");
+		message.channel.send("actor funcs: https://zdoom.org/wiki/Action_functions");
+		message.channel.send("actor flags: https://zdoom.org/wiki/Actor_flags");
+  	}else
 	if (message.content.toLowerCase() === 'gnomo, version') {
-    		message.channel.send("ponele que 1.2 ahi");
+    		message.channel.send("ponele que 1.3 ahi, ultima vez editado en julio 25 de 2019");
   	} else
 	if (message.content.toLowerCase() === 'gnomo, navidad' || message.content.toLowerCase() === 'gnomo, navidad!') {
 		var arrayicons = [":candy:", ":bell:", ":fireworks:", ":santa:"];
