@@ -31,11 +31,11 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, animators survival kit'||message.content.toLowerCase() === 'gnomo, animacion') {
     		message.channel.send("animators survival kit (en ingles): http://www.floobynooby.com/pdfs/The_Animators_Survival_Kit.pdf");
   	}else
-	if (message.content.toLowerCase() === 'gnomo, decorate') {
+	if (message.content.toLowerCase() === 'gnomo, acs') {
     		message.channel.send("https://zdoom.org/wiki/ACS");
 		message.channel.send("acs funcs: https://zdoom.org/wiki/Built-in_ACS_functions");
   	}else
-	if (message.content.toLowerCase() === 'gnomo, acs') {
+	if (message.content.toLowerCase() === 'gnomo, decorate') {
     		message.channel.send("https://zdoom.org/wiki/DECORATE");
 		message.channel.send("expresiones: https://zdoom.org/wiki/DECORATE_expressions");
 		message.channel.send("actor funcs: https://zdoom.org/wiki/Action_functions");
