@@ -210,7 +210,7 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, bad vibes') {
 		message.channel.send('https://i.imgur.com/Btlb52Y.jpg');
   	}
-	if (message.content.toLowerCase() === 'gnomo, bad vibes') {
+	if (message.content.toLowerCase() === 'gnomo, cash money') {
 		message.channel.send('https://cdn.discordapp.com/attachments/610055527220903936/617797666495004673/HEm1qGw.jpg');
   	}
 	else
