@@ -79,7 +79,7 @@ client.on('message', message => {
     			message.channel.send(":christmas_tree:" + chooseFromArray(arrayicons) + ":christmas_tree: " + chooseFromArray(array) + " :christmas_tree:" + chooseFromArray(arrayicons) + ":christmas_tree:");
 			message.channel.send(chooseFromArray(array2))
             		.catch(console.error); // add error handling here
-        	}, (((1 * 1000)*60)*60) ); 
+        	}, (((1 * 1000)*60)*60)*4 ); 
 		message.delete(1000);
     	} else
 	if (message.content.toLowerCase().substring(0, 11) == 'gnomo, deci') {
