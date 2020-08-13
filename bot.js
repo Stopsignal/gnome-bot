@@ -26,6 +26,10 @@ client.on('message', message => {
 		//message.channel.send('n: ' + n);
 		//message.channel.send('n2: ' + n2);
 	}
+	if (message.content.toLowerCase().substring(0, 4) == 'test') {
+		var array = ["lpm juanba", "dios mio gordo basta", "test", "test", "test", "test", "test", "tenes cara de caca", "puto el que lee", "miralo al gordo escribiendo test", "test"];
+    		message.channel.send(chooseFromArray(array));
+  	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
 	if (message.content.toLowerCase() === 'gnomo, animators survival kit'||message.content.toLowerCase() === 'gnomo, animacion') {
@@ -40,6 +44,10 @@ client.on('message', message => {
 		message.channel.send("expresiones: https://zdoom.org/wiki/DECORATE_expressions");
 		message.channel.send("actor funcs: https://zdoom.org/wiki/Action_functions");
 		message.channel.send("actor flags: https://zdoom.org/wiki/Actor_flags");
+  	}else
+	if (message.content.toLowerCase() === 'gnomo, mapinfo') {
+		var array = ["https://zdoom.org/wiki/mapinfo", "https://zdoom.org/wiki/mapinfo", "https://zdoom.org/wiki/mapinfo", "concha tuya porcongo"];
+    		message.channel.send(chooseFromArray(array));
   	}else
 	if (message.content.toLowerCase() === 'gnomo, version') {
     		message.channel.send("ponele que 1.3 ahi, ultima vez editado en julio 25 de 2019");
