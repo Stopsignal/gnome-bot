@@ -26,6 +26,9 @@ client.on('message', message => {
 		//message.channel.send('n: ' + n);
 		//message.channel.send('n2: ' + n2);
 	}
+	if (message.content.toLowerCase().substring(0, 4) == 'poggers') {
+		message.channel.send("https://i.imgur.com/UIgOVb6.gif");
+  	}
 	if (message.content.toLowerCase().substring(0, 4) == 'test') {
 		var array = ["lpm juanba", "dios mio gordo basta", "test", "test", "test", "test", "test", "tenes cara de caca", "puto el que lee", "miralo al gordo escribiendo test", "test"];
     		message.channel.send(chooseFromArray(array));
@@ -38,6 +41,9 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, acs') {
     		message.channel.send("https://zdoom.org/wiki/ACS");
 		message.channel.send("acs funcs: https://zdoom.org/wiki/Built-in_ACS_functions");
+  	}else
+	if (message.content.toLowerCase() === 'gnomo, panic') {
+    		message.channel.send("https://i.imgur.com/yKYT3GE.png");
   	}else
 	if (message.content.toLowerCase() === 'gnomo, decorate') {
     		message.channel.send("https://zdoom.org/wiki/DECORATE");
@@ -119,6 +125,10 @@ client.on('message', message => {
   	} else
 	if (message.content.toLowerCase() === 'gnomo, putea a doritos' || message.content.toLowerCase() === 'gnomo, doritos' || message.content.toLowerCase() === 'gnomo, ya sabes que hacer') {
 		var array = ["lpm doritos", "uff doritos la concha de la lora", "doritos lpm", "uff basta doritos"];
+    		message.channel.send(chooseFromArray(array));
+  	} else 
+	if (message.content.toLowerCase() === 'gnomo, poggy' || message.content.toLowerCase() === 'gnomo, poggii' || message.content.toLowerCase() === 'gnomo, pogger' || message.content.toLowerCase() === 'gnomo, poggers') {
+		var array = ["https://image.shutterstock.com/image-photo/green-plastic-toy-frog-on-260nw-2722112.jpg", "https://image.shutterstock.com/image-photo/toy-frogs-on-white-background-260nw-474573283.jpg", "https://sc01.alicdn.com/kf/HTB1iX5APXXXXXXmXXXXq6xXFXXXP.jpg_350x350.jpg", "https://image.shutterstock.com/image-photo/green-plastic-toy-frog-on-260nw-2722112.jpg", "https://traditionsjewishgifts.com/media/passover-squeaky-frogs-cazpf750-0495-2.JPG"];
     		message.channel.send(chooseFromArray(array));
   	} else 
 	if (message.content.toLowerCase() === 'gnomo, penis') {
