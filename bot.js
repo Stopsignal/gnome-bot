@@ -45,10 +45,6 @@ client.on('message', message => {
 		message.channel.send("actor funcs: https://zdoom.org/wiki/Action_functions");
 		message.channel.send("actor flags: https://zdoom.org/wiki/Actor_flags");
   	}else
-	if (message.content.toLowerCase() === 'gnomo, mapinfo') {
-		var array = ["https://zdoom.org/wiki/mapinfo", "https://zdoom.org/wiki/mapinfo", "https://zdoom.org/wiki/mapinfo", "concha tuya porcongo"];
-    		message.channel.send(chooseFromArray(array));
-  	}else
 	if (message.content.toLowerCase() === 'gnomo, version') {
     		message.channel.send("ponele que 1.3 ahi, ultima vez editado en julio 25 de 2019");
   	} else
