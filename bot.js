@@ -28,12 +28,10 @@ client.on('message', message => {
 	}
 	if (message.content.toLowerCase().substring(0, 7) == 'poggers') {
 		message.channel.send("https://i.imgur.com/UIgOVb6.gif");
-		break;
   	}
 	if (message.content.toLowerCase().substring(0, 4) == 'test' && message.content.length < 5) {
 		var array = ["lpm juanba", "dios mio gordo basta", "test", "test", "test", "test", "test", "tenes cara de caca", "puto el que lee", "miralo al gordo escribiendo test", "test"];
     		message.channel.send(chooseFromArray(array));
-		break;
   	}
 	if (message.content.toLowerCase().substring(0, 6) !== 'gnomo,') return;
 	
@@ -233,7 +231,6 @@ client.on('message', message => {
 	if (message.content.toLowerCase() === 'gnomo, jeringo') {
 		message.channel.send('aca tenes, ravioles: https://www.dropbox.com/sh/3er6oapxvnwmn7r/AAA1OM1udDPU4tkbkWXLrUF0a?dl=0&lst=');
   	}
-	break;
 });
 
 function chooseFromArray(params){
