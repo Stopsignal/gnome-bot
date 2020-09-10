@@ -6,8 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if ((message.content.toLowerCase().substring(0, 1) == '­
-­' || (message.content.toLowerCase().substring(0, 1) == 'x' ||	message.content.toLowerCase().substring(0, 1) == 'b' || message.content.toLowerCase().substring(0, 1) == 'd' || message.content.toLowerCase().substring(0, 1) == ':' || message.content.toLowerCase().substring(0, 1) == 'v' || message.content.toLowerCase().substring(0, 1) == ' ' || message.content.toLowerCase().substring(0, 1) == 's' || message.content.toLowerCase().substring(0, 1) == '.') && message.content.length > 1 && message.content.toLowerCase().substring(0, 3)!== 'd:') {
+	if ((message.content.toLowerCase().substring(0, 1) == 'x' ||	message.content.toLowerCase().substring(0, 1) == 'b' || message.content.toLowerCase().substring(0, 1) == 'd' || message.content.toLowerCase().substring(0, 1) == ':' || message.content.toLowerCase().substring(0, 1) == 'v' || message.content.toLowerCase().substring(0, 1) == ' ' || message.content.toLowerCase().substring(0, 1) == 's' || message.content.toLowerCase().substring(0, 1) == '.') && message.content.length > 1 && message.content.toLowerCase().substring(0, 3)!== 'd:') {
 		s = message.content.toLowerCase();
 		n = 0;
 		n2 = 0;
@@ -15,10 +14,7 @@ client.on('message', message => {
 		    if (s.charAt(x) =='s' || s.charAt(x) ==' '){
 			//
 		    } else 
-		    if (s.charAt(x) == '
-­
-­
-' || s.charAt(x) == 'x' || s.charAt(x) == 'd' || s.charAt(x) == ':' || s.charAt(x) == 'v' || s.charAt(x) == 'k' || s.charAt(x) == 'b'){
+		    if (s.charAt(x) == 'x' || s.charAt(x) == 'd' || s.charAt(x) == ':' || s.charAt(x) == 'v' || s.charAt(x) == 'k' || s.charAt(x) == 'b'){
 			n2+=1;
 		    } else { 
 			n++;
