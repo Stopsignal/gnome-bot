@@ -26,6 +26,10 @@ client.on('message', message => {
 		//message.channel.send('n: ' + n);
 		//message.channel.send('n2: ' + n2);
 	}
+	if (message.content.toLowerCase() === 'perdi') {
+		message.author.sendMessage("no");
+		message.delete(1000);
+  	}
 	if (message.content.toLowerCase().substring(0, 7) == 'poggers') {
 		message.channel.send("https://i.imgur.com/UIgOVb6.gif");
   	}
