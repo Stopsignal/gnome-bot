@@ -33,6 +33,10 @@ client.on('message', message => {
 	if (message.content.toLowerCase().substring(0, 7) == 'poggers') {
 		message.channel.send("https://i.imgur.com/UIgOVb6.gif");
   	}
+	if (message.content.toLowerCase().substring(0, 7) == 'render') {
+		message.channel.send("che te voy a pasar UNA IMAGEN");
+		message.channel.send("https://i.imgur.com/ZAHR47a.png");
+  	}
 	if (message.content.toLowerCase().substring(0, 4) == 'test' && message.content.length < 5) {
 		var array = ["lpm juanba", "dios mio gordo basta", "test", "test", "test", "test", "test", "tenes cara de caca", "puto el que lee", "miralo al gordo escribiendo test", "test"];
     		message.channel.send(chooseFromArray(array));
